@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_af9becc867684c4e8cef6b7098ef79e7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_af9becc867684c4e8cef6b7098ef79e7" ></div>
+        
+</body>
+<script>    
+    
+            var map_af9becc867684c4e8cef6b7098ef79e7 = L.map(
+                "map_af9becc867684c4e8cef6b7098ef79e7",
+                {
+                    center: [19.870130000000074, 75.34598000000005],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f83be601796e4dd196a94ec091a2e2fe = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_af9becc867684c4e8cef6b7098ef79e7);
+        
+    
+            var marker_784a2f61df3742d2ac7098c8b7ad6f60 = L.marker(
+                [19.870130000000074, 75.34598000000005],
+                {}
+            ).addTo(map_af9becc867684c4e8cef6b7098ef79e7);
+        
+    
+            var icon_1a4637036e73482b96ed3da2a049d6df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_784a2f61df3742d2ac7098c8b7ad6f60.setIcon(icon_1a4637036e73482b96ed3da2a049d6df);
+        
+    
+        var popup_529f9fb3b0804a32989a20c47babfe6f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9869d82fee1746f08b36e2187b72835e = $(`<div id="html_9869d82fee1746f08b36e2187b72835e" style="width: 100.0%; height: 100.0%;">Abad MH</div>`)[0];
+            popup_529f9fb3b0804a32989a20c47babfe6f.setContent(html_9869d82fee1746f08b36e2187b72835e);
+        
+
+        marker_784a2f61df3742d2ac7098c8b7ad6f60.bindPopup(popup_529f9fb3b0804a32989a20c47babfe6f)
+        ;
+
+        
+    
+</script>
